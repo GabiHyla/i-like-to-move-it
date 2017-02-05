@@ -1,0 +1,142 @@
+body {
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+
+.navbar {
+    opacity: 0.75;
+}
+
+/* widget */
+
+
+.widget {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 22px
+}
+
+.widget::after,.widget::before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+
+.widget-title {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: Arimo,sans-serif;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2b2b2b
+}
+
+.widget-title span {
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    padding: 0 15px;
+    background: #ffffff;
+}
+
+.widget-title::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 10px;
+    border-bottom: 1px solid #dedede;
+    width: 100%
+}
+.follow-me {
+    text-align: center;
+}
+.follow-me .social-icon li a {
+    width: 40px;
+    height: 40px;
+    line-height: 60px;
+}
+.social-icon>li {
+    display: inline-block;
+}
+
+/* about*/
+.author-avatar img {
+    width: 100%;
+    padding: 20px
+}
+
+/* post */
+
+.post img { 
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* misc */
+
+.padding-right {
+    padding-right: 10px;
+}
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
+.popular-image {
+    width: 130px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+    .popular-image {
+        width: 100px;
+    }
+}
+
+.social-icon i {
+    padding: 10px;
+}
+/* footer*/
+
+footer-subscribe.site-footer {
+    width: 100%;
+    background-color: #fff;
+}   
+.site-footer .footer-subscribe {
+    display: block;
+    padding: 60px 0;
+    text-align: center;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} 
+.site-footer .footer-subscribe .subscribe-title {
+    margin-bottom: 40px;
+    font-size: 48px;
+    color: #2b2b2b;
+} 
+button.btn.btn-default {
+    padding: 13px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 2px solid #2b2b2b;
+} 
+input.form-control {
+    display: inline-block;
+    height: auto;
+    width: 280px;
+    padding: 15px 20px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: 0;
+    box-shadow: none;
+    background-color: #f4f4f4;
+} 
