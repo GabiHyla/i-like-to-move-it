@@ -97,8 +97,56 @@ body {
         width: 100px;
     }
 }
+.social {
+margin: 0;
+padding: 0;
+}
+.social ul {
+margin: 0;
 
-.social-icon i {
+}
+.social ul li {
+list-style: none outside none;
+display: inline-block;
+padding: 10px;
+}
+.social i {
+width: 50px;
+height: 50px;
+color: #FFF;
+background-color: #c32190;
+font-size: 20px;
+text-align:center;
+padding-top: 20px;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+-o-border-radius: 50%;
+transition: all ease 0.3s;
+-moz-transition: all ease 0.3s;
+-webkit-transition: all ease 0.3s;
+-o-transition: all ease 0.3s;
+-ms-transition: all ease 0.3s;
+}
+.social i:hover {
+color: #FFF;
+text-decoration: none;
+transition: all ease 0.3s;
+-moz-transition: all ease 0.3s;
+-webkit-transition: all ease 0.3s;
+-o-transition: all ease 0.3s;
+-ms-transition: all ease 0.3s;
+}
+.social .fa-facebook:hover { /* round facebook icon*/
+background: #4060A5;
+}
+.social .fa-twitter:hover { /* round twitter icon*/
+background: #00ABE3;
+}
+.social .fa-instagram:hover { /* round instagram icon*/
+background: #375989;
+}
+/*.social-icon i {
     padding: 10px;
 }
 /* footer*/
@@ -120,15 +168,9 @@ footer-subscribe.site-footer {
 } 
 .site-footer .footer-subscribe .subscribe-title {
     margin-bottom: 40px;
-    font-size: 48px;
+    font-size: 30px;
     color: #2b2b2b;
-} 
-button.btn.btn-default {
-    padding: 13px 20px;
-    font-size: 12px;
-    text-transform: uppercase;
-    border: 2px solid #2b2b2b;
-} 
+}  
 input.form-control {
     display: inline-block;
     height: auto;
