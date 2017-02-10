@@ -61,11 +61,12 @@ body {
     height: 40px;
     line-height: 60px;
 }
-.social-icon>li {
+.social-icon li {
     display: inline-block;
 }
 
 /* about*/
+
 .author-avatar img {
     width: 100%;
     padding: 20px
