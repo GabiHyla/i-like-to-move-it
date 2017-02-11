@@ -1,7 +1,7 @@
 body {
     font-family: "Raleway", Helvetica, sans-serif;
     line-height: 24px;
-    background-color: white;
+    background: white;
 }
 
 .navbar {
@@ -15,7 +15,7 @@ body {
 
 .widget {
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 22px
 }
 
@@ -40,6 +40,7 @@ body {
 .widget-title span {
     display: inline-block;
     position: relative;
+    background-color: white;
     z-index: 3;
     padding: 0 15px;
 }
@@ -170,6 +171,7 @@ footer-subscribe.site-footer {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 40px;
 } 
 .site-footer .footer-subscribe .subscribe-title {
     margin-bottom: 40px;
@@ -351,9 +353,6 @@ div#content.site-content {
 
 /* GALERY */
 
-body.galery {
-    background-color: #ECEFF1       ;
-}
 
 @import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
 .fa-spin-fast {
@@ -1937,12 +1936,15 @@ h3 {
 
 
 @import (css) "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
-body {
-  background-color: #ECEFF1;
+
+body.galery {
   color: #37474F;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 16px;
+}
+body {
+    background-color: white;
 }
 
 h1, h2, h3 {
