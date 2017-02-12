@@ -13,7 +13,9 @@ a.navbar-brand {
     font-size: 30px;
     font-weight: 700;
 }
-
+ul.nav.navbar-nav {
+    margin-left: 100px;
+}
 /* widget */
 
 .widget {
@@ -88,6 +90,8 @@ a.navbar-brand {
 .author-avatar img {
     width: 100%;
     padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.10), 0px 0px 8px 8px rgba(0, 0, 0, 0.23), 0px 0px 4px 5px rgba(0, 0, 0, 0.16), 0px -2px 2px 5px rgba(0, 0, 0, 0.16);
 }
 p.quote {
     padding-left: 20px;
@@ -107,10 +111,11 @@ h2.text-center{
     background-color: #f5f5f5;
     border-radius: 0;
     border: 1px solid #e3e3e3;
+    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.10), 0px 0px 8px 8px rgba(0, 0, 0, 0.23), 0px 0px 4px 5px rgba(0, 0, 0, 0.16), 0px -2px 2px 5px rgba(0, 0, 0, 0.16);
 }
 .post img { 
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .post h2{
@@ -132,9 +137,7 @@ h2.text-center{
     line-height: 1.3333333;
 }
 .btn-default {
-    color: #333;
     background-color: white;
-    border-color: #757575;
     border-radius: 0;
     text-transform: uppercase;
 }
@@ -143,13 +146,12 @@ a.btn.btn-lg {
     background: transparent;
     border-width: 2px;
     border-style: solid;
-    border-color: #ccc;
     border-radius: 0;
     position: relative;
     margin: 1em;
     display: inline-block;
     padding: 0.5em 1em;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     text-align: center;
     font-family: "Raleway", Helvetica, sans-serif;
 }
@@ -189,7 +191,7 @@ a.btn.btn-lg:hover {
 }
 a.btn-lg.btn-lg {
     border-color: rgba(0, 0, 0, 0);
-    color: #999
+    color: #1f0909;
 }
 a.btn.btn-lg:hover {
     border-color: #757575;
@@ -219,8 +221,8 @@ a.btn.btn-lg:hover:after {
     padding-bottom: 10px;
 }
 .popular-image {
-    max-width: 130px;
-    height: auto;
+    max-width: 200px;
+    height: 150px;
 }
 
 
@@ -267,7 +269,7 @@ a.btn.btn-lg:hover:after {
     background: #00ABE3;
 }
 .social .fa-instagram:hover { /* round instagram icon*/
-    background: #375989;
+    background: #fb3958;
 }
 /*.social-icon i {
     padding: 10px;
@@ -324,9 +326,7 @@ input.form-control {
     padding: 15px 20px;
     letter-spacing: 1px;
     font-size: 12px;
-    border: 1px solid gray;
     border-radius: 0;
-    box-shadow: none;
     background-color: #f4f4f4;
 } 
 /* misc */
@@ -359,8 +359,20 @@ input.form-control {
     text-align: center;
     text-transform: capitalize;
     font-style: italic;
-    color: #bfbfbf;
+    color: #2b2b2b;
     padding-bottom: 20px;
+}
+.entry-date{ 
+    color: #bd308f; 
+}
+.comment-link a {
+    color: #bd308f;
+}
+.cat-link a {
+    color: #bd308f;
+}
+.entry-like a {
+    color: #bd308f;
 }
 .post1 h3 {
     font-weight: 200;
@@ -374,10 +386,9 @@ input.form-control {
     color: #bd308f;
 }
 .tags-links a {
-    color: #333;
+    color: #2b2b2b;
     text-decoration: none;
     padding-right: 15px;
-}
 }
 .section-title {
     display: block;
@@ -388,7 +399,12 @@ input.form-control {
 .related-posts {
     display: block;
     margin-bottom: 40px;
-}  
+} 
+.post-thumbnail img {
+    margin-bottom: 20px;
+    transition: 0.2s;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.16), 10px 10px 10px 5px rgba(0, 0, 0, 0.23);
+} 
 .related-posts .post-container {
     display: block;
     max-width: 100%;
@@ -434,6 +450,7 @@ input.form-control {
 .tags-links {
     display: block;
     margin: 40px 0;
+    color: ;
     text-transform: capitalize;
     text-align: center;
 }
@@ -484,7 +501,17 @@ div#content.site-content {
     background-color: #fff;
     background-image: none;
 }
+h3.post-title a {
+    font-size: 18px;
+    color: black;
+    font-style: italic;
+}
+span.post-meta a {
+    font-size: 15px;
+    color: black;
+    font-style: italic;
 
+}
 /* GALERY */
 
 
