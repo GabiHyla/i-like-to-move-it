@@ -1,9 +1,41 @@
+/* 
+Project Name: iLiketomoveit
+Client: Gabriela Hyla
+Author: Gabriela Hyla
+*/
+/******************************************
+/* COLOURS
+/*******************************************/
+/* #f4f4f4 - gray */ 
+/* #2b2b2b - very dark gray */
+/* #bd308f - Moderate pink */
+/* #263238 - Very dark grayish blue*/
+/* #e3e3e3 - very light gray*/
+/* #757575 - dark gray*/
+/* */
+
+/******************************************
+/* SENSIBLE DEFAULTS   
+
+/*******************************************/
+
+/* Font - "Raleway", Helvetica, sans-serif; */
+
+/* MAIN PAGE */
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
 body {
     font-family: "Raleway", Helvetica, sans-serif;
     line-height: 24px;
     background: white;
     font-size: 16px;
 }
+
+/* NAVIGATION */
+
 .navbar {
     opacity: 0.75;
 }
@@ -11,13 +43,15 @@ body {
     font-style: 30px;
 }
 a.navbar-brand {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 ul.nav.navbar-nav {
     margin-left: 100px;
 }
-/* widget */
+
+
+/*  WIDGET */
 
 
 div.col-md-8.col-md-push-4 {
@@ -96,7 +130,7 @@ div.col-sm-12 a {
     display: inline-block;
 }
 
-/* About*/
+/* ABOUT SECTION */
 
 .author-avatar img {
     width: 100%;
@@ -110,11 +144,12 @@ p.quote {
     font-family: cursive;
 }
 
-/* Post */
+/* POSTS SECTION */
 
-h2.text-center{ 
+
+div.entry-header { 
     padding-top: 10%;
- }
+}
 .well {
     min-height: 20px;
     padding: 19px;
@@ -140,7 +175,7 @@ h2.text-center{
     font-size: 16px;
 }
 
-/* button*/
+/* BUTTONS*/
 
 .btn-lg {
     font-size: 14px;
@@ -220,7 +255,8 @@ a.btn.btn-lg:hover:after {
     border-color: #757575;
 }
 
-/* misc */
+/* MISC */
+
 .carousel-caption a {
     text-decoration: none;
     color: white;
@@ -235,9 +271,22 @@ a.btn.btn-lg:hover:after {
     max-width: 200px;
     height: 150px;
 }
+hr {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
 
 
 /* Small devices (tablets, 768px and up) */
+/* SOCIAL ICONS */
+
 @media (min-width: @screen-sm-min) { 
     .popular-image {
         width: 100px;
@@ -282,10 +331,9 @@ a.btn.btn-lg:hover:after {
 .social .fa-instagram:hover { /* round instagram icon*/
     background: #fb3958;
 }
-/*.social-icon i {
-    padding: 10px;
-}
-/* footer suscribe*/
+
+
+/* FOOTER SUSCRIBE */
 
 footer-subscribe.site-footer {
     width: 100%;
@@ -315,7 +363,7 @@ footer-subscribe.site-footer {
     padding-bottom: 20px;
 }
 
- /* footer instagram*/
+ /* FOOTER INSTAGRAM */
 
 #instagram-galery {
     position: relative;
@@ -340,7 +388,11 @@ input.form-control {
     border-radius: 0;
     background-color: #f4f4f4;
 } 
-/* misc */
+
+
+/* MISC */
+
+
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
@@ -348,6 +400,10 @@ input.form-control {
 
 
 //////*   POST1 - NEXT PAGE *///////
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
 
 .row {
     margin-right: -10px;
@@ -373,7 +429,7 @@ input.form-control {
     color: #2b2b2b;
     padding-bottom: 20px;
 }
-.entry-date{ 
+.entry-date { 
     color: #bd308f; 
 }
 .comment-link a {
@@ -519,18 +575,35 @@ h3.post-title a {
 }
 span.post-meta a {
     font-size: 15px;
-    color: black;
+    color: #bd308f;
     font-style: italic;
-
 }
-/* GALERY */
+
+
+
+
+///////* GALERY PAGE  *//////////
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
 
 .page-header {
   margin-top: 100px;
 }
-.page-header h1, h3 {
-  font-size: 20px;
+.page-header h1 {
+  font-size: 25px;
+  text-align: center;
 }
+.page-header p {
+  text-align: center;
+}
+.page-header span {
+  font-size: 20px;  
+  color: #bd308f;
+}
+
+/*CARDS */
 
 @import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
 .fa-spin-fast {
