@@ -28,10 +28,10 @@ Author: Gabriela Hyla
 /*******************************************/
 
 body {
-    font-family: "Raleway", Helvetica, sans-serif;
-    line-height: 24px;
-    background: white;
-    font-size: 16px;
+  font-family: "Raleway", Helvetica, sans-serif;
+  line-height: 24px;
+  background: white;
+  font-size: 16px;
 }
 
 /* NAVIGATION */
@@ -71,7 +71,7 @@ div.col-sm-12 a {
 .widget a {
     color: #263238;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: capitalize;
 }
 .widget span {
@@ -99,7 +99,7 @@ div.col-sm-12 a {
 .widget-title span {
     display: inline-block;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
     font-size: 18px;
     background-color: #fff;
@@ -136,7 +136,7 @@ div.col-sm-12 a {
     width: 100%;
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.10), 0px 0px 8px 8px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.10), 0px 0px 7px 2px rgba(0, 0, 0, 0.10);
 }
 p.quote {
     padding-left: 20px;
@@ -162,7 +162,7 @@ div.entry-header {
 .post img { 
     width: 100%;
     padding: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 10px 7px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .post h2{
     text-align: center;
@@ -526,13 +526,13 @@ input.form-control {
     position: relative;
     z-index: 3;
     padding: 0 15px;
-    background: #ffffff;
+    background: #fff;
 }
 .section-title h3 {
     display: block;
     position: relative;
     margin-bottom: 20px;
-    font-family: Arimo,sans-serif;
+    font-family: "Raleway", Helvetica, sans-serif;
     text-align: center;
     font-size: 14px;
     line-height: 24px;
@@ -602,6 +602,7 @@ span.post-meta a {
   font-size: 20px;  
   color: #bd308f;
 }
+.
 
 /*CARDS */
 
@@ -2182,6 +2183,50 @@ h3 {
 
 @import (css) "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
 
+/* Videos */
 
+#video_player { 
+  display: table; line-height: 0;
+  font-size: 0; background: #000;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#video_container { 
+  position: relative;
+}
+#video_player div, #video_player figcaption { 
+  display: table-cell;
+  vertical-align: top; 
+}
+#video_container video { 
+  position: absolute; 
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+#video_player figcaption { width: 25%; }
+#video_player figcaption a { display: block; }
+#video_player figcaption a { 
+  opacity: .5;
+  transition: 1s opacity; 
+}
+#video_player figcaption a img, figure video { 
+  width: 100%; height: auto; 
+}
+#video_player figcaption a.currentvid, #video_player figcaption a:hover, #video_player figcaption a:focus { opacity: 1; }
+@media (max-width: 700px) {
+  #video_player video, #video_player figcaption { 
+    display: table-row; 
+  }
+#video_container { padding-top: 56.25%; }
+#video_player figcaption a { 
+  display: inline-block; width: 33.33%; 
+}
+}
 
+div.video {
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.16), 10px 10px 10px 5px rgba(0, 0, 0, 0.23);
+
+}
 
